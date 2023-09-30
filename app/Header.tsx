@@ -61,8 +61,11 @@ export default function Header() {
                     Fourth Link
                 </Link>
             </nav>
-            <button className="bg-blue-600 text-white font-medium px-3 py-1.5 rounded flex items-center justify-center">
-                <span>Button</span>
+            <Link
+                href="/todos"
+                className="bg-blue-600 text-white font-medium px-3 py-1.5 rounded flex items-center justify-center"
+            >
+                <span>Todos</span>
                 <svg
                     xmlns="http://www.w3.org/2000/svg"
                     fill="none"
@@ -77,7 +80,7 @@ export default function Header() {
                         d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75"
                     ></path>
                 </svg>
-            </button>
+            </Link>
         </header>
     );
 }

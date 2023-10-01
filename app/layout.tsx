@@ -1,4 +1,4 @@
-import "./globals.css";
+import "../styles/globals.css";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import Header from "./Header";
@@ -17,6 +17,10 @@ export default function RootLayout({
 }) {
     return (
         <html lang="en">
+            <head>
+                <title>Seovileo</title>
+                <link rel="icon" href="/favicon.ico" sizes="any" />
+            </head>
             <body className={inter.className}>
                 <Header />
                 {children}

@@ -6,7 +6,7 @@ export default function RootLayout({
     children: React.ReactNode;
 }) {
     return (
-        <main className="flex">
+        <main className="flex max-w-screen-2xl mx-auto">
             <div>
                 <TodosList />
             </div>

@@ -10,16 +10,16 @@ const fetchTodos = async () => {
 export default async function TodosList() {
     const todos = await fetchTodos();
     return (
-        <>
+        <div className="flex flex-col px-10 py-4 text-center h-screen overflow-y-auto">
             {todos.map((todo) => (
                 <Link
                     key={todo.id}
                     href={`/todos/${todo.id}`}
-                    className="hover:text-blue-600 transition-colors p-2 w-max"
+                    className="hover:text-blue-600 transition-colors p-1"
                 >
                     Todo {todo.id}
                 </Link>
             ))}
-        </>
+        </div>
     );
 }

@@ -5,6 +5,13 @@ import { usePathname } from "next/navigation";
 
 export default function Header() {
     const pathName = usePathname();
+    const links = [
+        { path: "/", label: "Start" },
+        { path: "/o-mnie", label: "O Mnie" },
+        { path: "/fotografia", label: "Fotografia" },
+        { path: "/oferta", label: "Oferta" },
+        { path: "/kontakt", label: "Kontakt" },
+    ];
     return (
         <header
             className={`text-gray-800 p-5 mb-4 ${
@@ -26,13 +33,23 @@ export default function Header() {
                     <div className="w-3 h-0.5 m-1 rounded-lg bg-yellow-600"></div>
                     <div className="w-2 h-0.5 m-1 rounded-lg bg-yellow-600"></div>
                 </button>
-                <div className="items-center justify-center space-x-2 text-sm hidden lg:flex">
+                <div className="items-center justify-center space-x-12 text-sm hidden lg:flex">
+                    {links.map((link) => (
+                        <li
+                            key={link.path}
+                            className={`hover:text-red-500 transition-colors ${
+                                pathName === link.path ? "text-red-600 " : ""
+                            }`}
+                        >
+                            <Link className="p-2" href={link.path}>{link.label}</Link>
+                        </li>
+                    ))}
 
                     <Link
                         href="/todos"
-                        className="bg-gray-700 flex hover:bg-gray-800 transition-colors text-white font-medium px-3 py-1.5 rounded-xl items-center justify-center"
+                        className="btn-main flex items-center justify-center"
                     >
-                        <span>Portfolio</span>
+                        Strefa Klienta
                         <svg
                             xmlns="http://www.w3.org/2000/svg"
                             fill="none"

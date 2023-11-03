@@ -5,7 +5,7 @@ export const dynamicParams = true;
 
 const fetchTodo = async () => {
     const res = await fetch("https://graphql.datocms.com/", {
-        next: { revalidate: 10 },
+        next: { revalidate: 60 },
         method: "POST",
         headers: {
             "Content-Type": "application/json",

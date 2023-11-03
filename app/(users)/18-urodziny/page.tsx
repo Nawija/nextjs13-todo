@@ -26,12 +26,13 @@ export default async function TodoPage() {
     console.log(datocms.data);
 
     return (
-        <div className="flex flex-wrap object-cover">
+        <div className="flex flex-wrap ml-3">
             {datocms.data.allPhotos.map((photo: DatoCmsPhoto) => (
                 <img
-                    className="p-2"
-                    key={photo.img.id}
+                    className="p-1 object-cover"
+                    height={250}
                     width={250}
+                    key={photo.img.id}
                     src={photo.img.url}
                 />
             ))}

@@ -17,7 +17,6 @@ export default async function TodosList() {
         { path: "/Zdjęcia-kulinarne", label: "Zdjęcia kulinarne" },
         { path: "/Zdjęcia-motoryzacyjne", label: "Zdjęcia motoryzacyjne" },
         { path: "/Zdjęcia-produktowe", label: "Zdjęcia produktowe" },
-        
     ];
     return (
         <div className="flex flex-col pr-10 py-4 text-start h-screen overflow-y-auto border-r-2">

@@ -8,14 +8,13 @@
     transition: background-color 0.3s;
     color: #fff;
     font-weight: 500;
-    padding: 0.15rem 1.25rem;
     border-radius: 0.75rem;
     align-items: center;
     justify-content: center;
   }
   
   .btn-main:hover {
-    background-color: #4B5563;
+    background-color: #292d31;
   }
 
 @keyframes scaleAnimation {

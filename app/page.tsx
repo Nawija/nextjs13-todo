@@ -16,7 +16,7 @@ export default function Home() {
                 <div className="flex flex-col items-center justify-center">
                     <div className="flex flex-col  max-w-7xl justify-center items-center space-y-3 w-full ">
                         <div className="flex flex-col   md:items-start items-center justify-center  space-y-3 px-8 text-center ">
-                            <h1 className="text-2xl w-max md:text-7xl font-bold relative mb-12 lg:mb-4">
+                            <h1 className="text-2xl w-max md:text-7xl font-bold relative mb-20 lg:mb-4">
                                 Odkryj Sztukę Fotografii
                                 <br /> Fotograf Siedlce
                                 <span className="text-base md:text-xl absolute w-max -bottom-6 right-6 font-light">
@@ -24,11 +24,11 @@ export default function Home() {
                                 </span>
                             </h1>
                         </div>
-                        <div className="flex flex-col lg:flex-row space-x-2 space-y-3 md:space-x-6   w-full items-center justify-center ">
+                        <div className="flex flex-col lg:flex-row space-x-2 space-y-3 md:space-x-6   w-full items-center justify-center scale-110 ">
                             <div className="lg:w-40 w-64 h-40  overflow-hidden rounded-xl ">
                                 <Image
                                     className={ImgClass}
-                                    style={{ animationDuration: "5s" }}
+                                    style={{ animationDuration: "15s" }}
                                     width={300}
                                     height={500}
                                     src={s1Img}
@@ -39,7 +39,7 @@ export default function Home() {
                                 <div className="w-32 lg:w-40 h-32  overflow-hidden rounded-xl ">
                                     <Image
                                         className={ImgClass}
-                                        style={{ animationDuration: "6s" }}
+                                        style={{ animationDuration: "16s" }}
                                         width={300}
                                         height={500}
                                         src={s4Img}
@@ -49,7 +49,7 @@ export default function Home() {
                                 <div className="w-32 lg:w-40 h-48  overflow-hidden rounded-xl ">
                                     <Image
                                         className={ImgClass}
-                                        style={{ animationDuration: "8s" }}
+                                        style={{ animationDuration: "18s" }}
                                         width={300}
                                         height={500}
                                         src={s2Img}
@@ -71,7 +71,7 @@ export default function Home() {
                                 <div className="w-32 lg:w-40 h-48  overflow-hidden rounded-xl ">
                                     <Image
                                         className={ImgClass}
-                                        style={{ animationDuration: "6s" }}
+                                        style={{ animationDuration: "16s" }}
                                         width={300}
                                         height={500}
                                         src={s1Img}
@@ -81,7 +81,7 @@ export default function Home() {
                                 <div className="w-32 lg:w-40 h-32  overflow-hidden rounded-xl ">
                                     <Image
                                         className={ImgClass}
-                                        style={{ animationDuration: "5s" }}
+                                        style={{ animationDuration: "15s" }}
                                         width={300}
                                         height={500}
                                         src={s2Img}
@@ -92,7 +92,7 @@ export default function Home() {
                             <div className="lg:w-40 w-64 h-40 hidden lg:flex  overflow-hidden rounded-xl ">
                                 <Image
                                     className={ImgClass}
-                                    style={{ animationDuration: "6s" }}
+                                    style={{ animationDuration: "16s" }}
                                     width={300}
                                     height={500}
                                     src={s3Img}

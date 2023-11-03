@@ -15,7 +15,7 @@ export default async function TodosList() {
                 <Link
                     key={todo.id}
                     href={`/todos/${todo.id}`}
-                    className="hover:text-blue-600 transition-colors p-1"
+                    className="hover:text-red-600 transition-colors p-1"
                 >
                     Todo {todo.id}
                 </Link>

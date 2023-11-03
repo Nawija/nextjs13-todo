@@ -7,7 +7,7 @@ export default function NotFoundPage() {
                 <p>Uupss..</p>
                 <p className="text-3xl">Error 404</p>
             </div>
-            <Link href="/" className="btn-main">
+            <Link href="/" className="btn-main px-3">
                 Strona Główna
             </Link>
         </div>

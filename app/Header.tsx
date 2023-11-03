@@ -27,11 +27,11 @@ export default function Header() {
                 </Link>
                 <button
                     aria-label="Menu"
-                    className="lg:hidden bg-gray-100 p-2.5 z-50 rounded-lg order-1 lg:order-none"
+                    className="lg:hidden p-2.5 z-50 rounded-lg order-1 lg:order-none"
                 >
-                    <div className="w-4 h-0.5 m-1 rounded-lg bg-yellow-600"></div>
-                    <div className="w-3 h-0.5 m-1 rounded-lg bg-yellow-600"></div>
-                    <div className="w-2 h-0.5 m-1 rounded-lg bg-yellow-600"></div>
+                    <div className="w-4 h-0.5 m-1 rounded-lg bg-red-600"></div>
+                    <div className="w-3 h-0.5 m-1 rounded-lg bg-red-600"></div>
+                    <div className="w-4 h-0.5 m-1 rounded-lg bg-red-600"></div>
                 </button>
                 <div className="items-center justify-center space-x-12 text-sm hidden lg:flex">
                     {links.map((link) => (
@@ -47,7 +47,7 @@ export default function Header() {
 
                     <Link
                         href="/todos"
-                        className="btn-main flex items-center justify-center"
+                        className="btn-main flex items-center justify-center py-1.5 px-3"
                     >
                         Strefa Klienta
                         <svg

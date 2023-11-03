@@ -25,7 +25,7 @@ export default async function TodoPage({ params: { todoId } }: PageProps) {
 
     return (
         <div className="p-10">
-            <p className="text-4xl font-semibold text-blue-500">#{todo.id}</p>
+            <p className="text-4xl font-semibold text-gray-800">#{todo.id}</p>
             <div className="flex items-start justify-center flex-col space-y-1">
                 <p className="text-lg font-semibold tracking-wide mt-2">{todo.title}</p>
                 <p>Completed: {todo.completed ? "yes" : "no"}</p>

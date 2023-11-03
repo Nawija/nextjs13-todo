@@ -22,7 +22,7 @@ export default function RootLayout({
                 <link rel="icon" href="/favicon.ico" sizes="any" />
             </head>
             <body className={inter.className}>
-                <div className="fixed top-0 left-0 bg-gradient-to-b from-black/20 to-white/0 w-full h-[50vh] -z-50" />
+                <div className="fixed top-0 left-0 bg-gradient-to-b from-black/20 to-white/0 w-full lg:h-[50vh] -z-50" />
                 <Header />
                 {children}
                 <div className="h-[200vh]" />

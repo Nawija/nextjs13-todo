@@ -1,4 +1,5 @@
 import { notFound } from "next/navigation";
+import { DatoCmsPhoto } from "@/typings";
 
 export const dynamicParams = true;
 
@@ -11,7 +12,7 @@ const fetchTodo = async () => {
             Authorization: `Bearer ${process.env.NEXT_DATOCMS_API_TOKEN}`,
         },
         body: JSON.stringify({
-            query: "{ photo { title } }",
+            query: "{ allPhotos { img {id url} } }",
         }),
     });
     const datocms = await res.json();
@@ -21,15 +22,20 @@ const fetchTodo = async () => {
 export default async function TodoPage() {
     const datocms = await fetchTodo();
 
-    // if (!datocms.title) return notFound();
-    console.log(datocms);
+    if (!datocms) return notFound();
+    console.log(datocms.data);
 
     return (
-        <div className="p-10">
-            <p className="text-4xl font-semibold text-gray-800">
-                {datocms.data.photo.title}
-            </p>
-            <div className="flex items-start justify-center flex-col space-y-1"></div>
+        <div className="flex flex-wrap object-cover">
+            {datocms.data.allPhotos.map((photo: DatoCmsPhoto) => (
+                <img
+                    className="p-2"
+                    key={photo.img.id}
+                    height={200}
+                    width={200}
+                    src={photo.img.url}
+                />
+            ))}
         </div>
     );
 }

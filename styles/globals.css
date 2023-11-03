@@ -30,3 +30,12 @@
     overflow: hidden;
     animation: scaleAnimation 10s ease-in-out alternate-reverse infinite;
 }
+
+.overflow-y-auto::-webkit-scrollbar {
+    width: .2em;
+  }
+   
+  .overflow-y-auto::-webkit-scrollbar-thumb {
+    background-color: rgb(145, 10, 10);
+    border-radius: 7%;
+  }

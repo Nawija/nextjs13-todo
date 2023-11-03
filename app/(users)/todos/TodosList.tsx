@@ -10,7 +10,7 @@ const fetchTodos = async () => {
 export default async function TodosList() {
     const todos = await fetchTodos();
     return (
-        <div className="flex flex-col pr-10 py-4 text-center h-screen overflow-y-auto">
+        <div className="flex border-r-2 flex-col pr-10 py-4 text-center h-screen overflow-y-auto">
             {todos.map((todo) => (
                 <Link
                     key={todo.id}

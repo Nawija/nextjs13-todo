@@ -2,6 +2,7 @@ import "../styles/globals.css";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import Header from "./Header";
+import Footer from "./Footer";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -25,7 +26,7 @@ export default function RootLayout({
                 <div className="fixed top-0 left-0 bg-gradient-to-b from-black/20 to-white/0 w-full lg:h-[50vh] -z-50" />
                 <Header />
                 {children}
-                <div className="h-[200vh]" />
+                <Footer />
             </body>
         </html>
     );

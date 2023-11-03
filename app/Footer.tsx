@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export default function Footer() {
     return (
-        <footer className="text-gray-800">
+        <footer className="text-gray-800 bg-gray-200 mt-20">
             <div className="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col">
                 <Link href="/" className="flex font-medium items-center md:justify-start justify-center text-gray-900">
                     <svg
@@ -27,7 +27,7 @@ export default function Footer() {
                             fill="currentColor"
                         ></path>
                     </svg>
-                    <span className="ml-3 text-xl">JAREK OLSZEWSKI</span>
+                    <span className="ml-2 text-xl -tracking-wide font-semibold">JAREK OLSZEWSKI</span>
                 </Link>
                 <p className="text-sm text-gray-600 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-200 sm:py-2 sm:mt-0 mt-4">
                     © 2023 TailwindBlock —

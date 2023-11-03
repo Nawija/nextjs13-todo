@@ -8,14 +8,16 @@ export default function Header() {
     const links = [
         { path: "/", label: "Start" },
         { path: "/o-mnie", label: "O Mnie" },
-        { path: "/fotografia", label: "Fotografia" },
+        { path: "/fotografia/fotografia-slubna", label: "Fotografia" },
         { path: "/oferta", label: "Oferta" },
         { path: "/kontakt", label: "Kontakt" },
     ];
     return (
         <header
-            className={`text-gray-800 p-5 mb-4 ${
-                pathName === "/" ? "" : "shadow-lg shadow-gray-200/40"
+            className={`text-gray-800 p-5 mb-4 fixed top-0 w-full z-50 ${
+                pathName === "/" || "/oferta"
+                    ? ""
+                    : "shadow-lg shadow-gray-200/40"
             }`}
         >
             <div className="max-w-screen-2xl mx-auto flex items-center justify-between">
@@ -41,7 +43,9 @@ export default function Header() {
                                 pathName === link.path ? "text-red-600 " : ""
                             }`}
                         >
-                            <Link className="p-2" href={link.path}>{link.label}</Link>
+                            <Link className="py-2" href={link.path}>
+                                {link.label}
+                            </Link>
                         </li>
                     ))}
 

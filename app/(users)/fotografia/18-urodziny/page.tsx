@@ -1,8 +1,6 @@
 import { notFound } from "next/navigation";
 import { DatoCmsPhoto } from "@/typings";
 
-export const dynamicParams = true;
-
 const fetchTodo = async () => {
     const res = await fetch("https://graphql.datocms.com/", {
         next: { revalidate: 60 },
@@ -20,19 +18,18 @@ const fetchTodo = async () => {
     return datocms;
 };
 
-export default async function TodoPage() {
+export default async function UrodzinyPage() {
     const datocms = await fetchTodo();
 
     if (!datocms) return notFound();
-    console.log(datocms.data);
 
     return (
         <div className="flex flex-wrap ml-3">
             {datocms.data.allPhotos.map((photo: DatoCmsPhoto) => (
                 <img
-                    className="p-1 object-cover"
+                    className="p-1 object-cover h-72 opacityAnimation"
                     height={250}
-                    width={250}
+                    width={260}
                     key={photo.img.id}
                     src={photo.img.url}
                 />

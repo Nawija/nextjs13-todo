@@ -11,7 +11,7 @@ export default function Home() {
     const ImgClass = "h-full w-full object-cover image-scaleAnim";
 
     return (
-        <div className="flex justify-center px-5 lg:py-20 py-2">
+        <div className="flex justify-center px-5 lg:py-20 py-2 opacityAnimation">
             <div className="flex justify-center  ">
                 <div className="flex flex-col items-center justify-center">
                     <div className="flex flex-col  max-w-7xl justify-center items-center space-y-3 w-full ">

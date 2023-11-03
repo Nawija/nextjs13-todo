@@ -31,8 +31,7 @@ export default async function TodoPage() {
                 <img
                     className="p-2"
                     key={photo.img.id}
-                    height={200}
-                    width={200}
+                    width={250}
                     src={photo.img.url}
                 />
             ))}

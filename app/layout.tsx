@@ -19,8 +19,8 @@ export default function RootLayout({
     return (
         <html lang="en">
             <head>
-                <title>Seovileo</title>
-                <link rel="icon" href="/favicon.ico" sizes="any" />
+                <title>Fotograf</title>
+                <link rel="icon" href="../images/fav.jpg" />
             </head>
             <body className={inter.className}>
                 <div className="fixed top-0 left-0 bg-gradient-to-b from-black/20 to-white/0 w-full lg:h-[50vh] -z-50" />

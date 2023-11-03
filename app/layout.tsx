@@ -22,6 +22,7 @@ export default function RootLayout({
                 <link rel="icon" href="/favicon.ico" sizes="any" />
             </head>
             <body className={inter.className}>
+                <div className="absolute top-0 left-0 bg-gradient-to-b from-rose-950/20 to-white/0 w-full h-[40vh] -z-50" />
                 <Header />
                 {children}
             </body>
